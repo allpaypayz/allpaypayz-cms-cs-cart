@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<addon scheme="3.0" edition_type="ROOT,ULT:VENDOR">
+  <id>allpaypayz</id>
+  <name>Allpaypayz Payments</name>
+  <version>0.1.0</version>
+  <priority>1000</priority>
+  <position>1000</position>
+  <status>active</status>
+  <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+  <default_language>en</default_language>
+  <supplier>Allpaypayz</supplier>
+  <supplier_link>https://allpaypayz.com</supplier_link>
+  <compatibility>
+    <core_version min="4.10.0"/>
+  </compatibility>
+  <description>Accept payments via Allpaypayz (cards, redirect, alternative methods).</description>
+  <queries>
+    <item for="install">
+      INSERT INTO ?:payment_processors (processor, processor_script, processor_template, admin_template, callback)
+      VALUES ('Allpaypayz', 'allpaypayz.php', 'views/orders/components/payments/allpaypayz.tpl', 'allpaypayz.tpl', 'Y');
+    </item>
+    <item for="uninstall">
+      DELETE FROM ?:payment_processors WHERE processor = 'Allpaypayz';
+    </item>
+  </queries>
+</addon>

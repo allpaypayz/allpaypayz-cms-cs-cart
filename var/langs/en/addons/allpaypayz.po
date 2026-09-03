@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: allpaypayz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgctxt "Addons::name::allpaypayz"
+msgid "Allpaypayz Payments"
+msgstr "Allpaypayz Payments"
+
+msgctxt "Addons::description::allpaypayz"
+msgid "Accept payments via Allpaypayz."
+msgstr "Accept payments via Allpaypayz."
+
+msgctxt "Languages::allpaypayz_api_key"
+msgid "API key"
+msgstr "API key"
+
+msgctxt "Languages::allpaypayz_sign_key"
+msgid "Webhook sign key"
+msgstr "Webhook sign key"
+
+msgctxt "Languages::allpaypayz_base_url"
+msgid "API environment"
+msgstr "API environment"
+
+msgctxt "Languages::allpaypayz_payment_method"
+msgid "Payment method"
+msgstr "Payment method"
